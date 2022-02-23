@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".UserSetup"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="361dp"
+        android:layout_height="257dp"
+        android:layout_marginTop="200dp"
+        app:srcCompat="@drawable/wetsuitdiagram"></ImageView>
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter your measurements to find out your size for your favorite brands."/>
+
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:entries="@array/gender"/>
+
+    <EditText
+        android:id="@+id/chestSizeInput"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Chest/Bust"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/genderSpinner"/>
+
+    <EditText
+        android:id="@+id/waistSizeInput"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Waist"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/chestSizeInput"/>
+
+    <EditText
+        android:id="@+id/hipsSizeInput"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Hips"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/waistSizeInput"/>
+
+    <EditText
+        android:id="@+id/inseamSizeInput"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Inseam"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/hipsSizeInput"/>
+
+    <Button
+        android:id="@+id/btnSaveUserInfo"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inseamSizeInput"
+        android:text="SAVE"/>
+
+</RelativeLayout>

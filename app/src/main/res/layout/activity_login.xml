@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/welcomeback"/>
+
+    <EditText
+        android:id="@+id/username1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/welcomeImage"
+        />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username1"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:selectAllOnFocus="false"
+        android:singleLine="false" />
+
+    <Button
+        android:id="@+id/btnSignin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Sign In"
+        android:layout_below="@id/password1"
+        />
+
+
+</RelativeLayout>

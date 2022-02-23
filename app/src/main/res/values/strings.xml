@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">itFits</string>
+    <string-array name="gender">
+        <item>Men</item>
+        <item>Women</item>
+    </string-array>
+</resources>
